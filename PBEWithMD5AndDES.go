@@ -1,4 +1,4 @@
-package main
+package PBEWithMD5AndDES
 
 import (
 	"fmt"
