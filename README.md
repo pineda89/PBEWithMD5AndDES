@@ -11,9 +11,9 @@ func main() {
 	originalText := "mythings"
 
 	res, err := Encrypt(password, iterations, originalText, salt)
-	fmt.Println("encripted", res, err)
+	fmt.Println("encrypted", res, err)
 	res, err = Decrypt(password, iterations, res, salt)
-	fmt.Println("decripted", res, err)
+	fmt.Println("decrypted", res, err)
 }
 ```
 
@@ -29,10 +29,10 @@ dcipher.init(Cipher.DECRYPT_MODE, key, paramSpec);
 
 byte[] enc = ecipher.doFinal(originalText);
 String res = Base64.getEncoder().encodeToString(enc);
-System.out.println("encripted " + res);
+System.out.println("encrypted " + res);
 
 byte[] dec = Base64.getDecoder().decode(res);
 dec = dcipher.doFinal(dec);
-System.out.println("decripted " + dec);
+System.out.println("decrypted " + dec);
 
 ```
